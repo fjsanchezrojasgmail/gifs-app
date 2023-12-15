@@ -2,11 +2,11 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from 'src/app/gifs/interfaces/gifs.interfaces';
 
 @Component({
-  selector: 'home-page-card-list',
-  templateUrl: './card-list.component.html',
-  styleUrls: ['./card-list.component.css']
+  selector: 'gif-shared-imageCard',
+  templateUrl: './imageCard.component.html',
+  styleUrls: ['./imageCard.component.css']
 })
-export class CardListComponent implements OnInit {
+export class ImageCardComponent implements OnInit {
 
   @Input()
   public gifs: Gif[] = [];
