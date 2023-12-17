@@ -10,7 +10,7 @@ export class CardListComponent implements OnInit {
 
   @Input()
   public gifs: Gif[] = [];
-  public genericText ="Titulo de gif";
+  public genericText ="No Title";
 
   constructor() { }
 

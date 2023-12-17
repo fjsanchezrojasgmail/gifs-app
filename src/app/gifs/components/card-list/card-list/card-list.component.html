@@ -5,7 +5,7 @@
   <div class="row">
 
 
-    <gif-shared-imageCard [gifs]="gifs"></gif-shared-imageCard>
+    <shared-imageCard *ngFor="let gif of gifs"  [gif]="gif" class="col-md-3 col-sm-6"></shared-imageCard>
 
 
   </div>

@@ -2,19 +2,23 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Gif } from 'src/app/gifs/interfaces/gifs.interfaces';
 
 @Component({
-  selector: 'gif-shared-imageCard',
+  selector: 'shared-imageCard',
   templateUrl: './imageCard.component.html',
   styleUrls: ['./imageCard.component.css']
 })
 export class ImageCardComponent implements OnInit {
 
   @Input()
-  public gifs: Gif[] = [];
-  public genericText ="Titulo de gif";
+  public gif!: Gif;
+
+  public genericText ="No Title";
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+
+    if(!this.gif ) throw new Error('Gif property is required');
+
   }
 
 }
